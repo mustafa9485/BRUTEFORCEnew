@@ -1,0 +1,3 @@
+إضافة أصل عن بعد باستخدام git https://github.com/mustafa9485/Codemagic-.git
+ git branch -M main 
+git push -u origin main
