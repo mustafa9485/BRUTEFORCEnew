@@ -17,15 +17,14 @@ workflows:
           flutter pub get
       - name: Build Flutter (Web)
         script: |
-          flutter build web --release
+          flutter build web --release --web-renderer html --no-tree-shake-icons
     artifacts:
       - build/web/**
     publishing:
       email:
         recipients:
           - moh244415@gmail.com
-    # Add a timeout for the build step
-    max_build_duration: 60 # Set to 60 minutes
+    max_build_duration: 60
 
 
 
