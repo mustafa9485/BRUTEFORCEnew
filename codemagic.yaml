@@ -4,7 +4,6 @@ workflows:
     environment:
       flutter: stable
       xcode: latest
-
     triggering:
       events:
         - push
@@ -25,7 +24,8 @@ workflows:
       email:
         recipients:
           - moh244415@gmail.com
-        # success: true  # Removed as it's an extra field
-        # failure: true  # Removed as it's an extra field
+    # Add a timeout for the build step
+    max_build_duration: 60 # Set to 60 minutes
+
 
 
