@@ -25,7 +25,7 @@ workflows:
       email:
         recipients:
           - moh244415@gmail.com
-        success: true
-        failure: true
+        # success: true  # Removed as it's an extra field
+        # failure: true  # Removed as it's an extra field
 
 
