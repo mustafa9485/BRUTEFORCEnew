@@ -1,0 +1,37 @@
+name: ai_flutter_generator
+description: "A new Flutter project"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  http: ^0.13.3
+  tflite_flutter: ^0.9.0
+  pdf: ^3.10.8
+  printing: ^5.11.1
+  file_picker: ^2.1.2
+  fl_chart: ^0.68.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/chatbot_model.tflite
+    - assets/label_map.json
+    - assets/code_tokenizer.json
+    - assets/desc_tokenizer.json
+
+
